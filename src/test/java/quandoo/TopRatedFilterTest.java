@@ -1,22 +1,20 @@
 package quandoo;
 
-import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import pages.quandoo.SearchPage;
+import pages.quandoo.searchpage.TopRatedFilter;
 
 import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Selenide.open;
 
-public class QuandooTest {
-    SearchPage page;
+public class TopRatedFilterTest {
+    TopRatedFilter page;
 
     @BeforeEach
     public void acceptCookies() {
-        page = open("https://www.quandoo.de/en/berlin", SearchPage.class);
+        page = open("https://www.quandoo.de/en/berlin", TopRatedFilter.class);
         page.acceptCookies();
-
     }
 
     @Test

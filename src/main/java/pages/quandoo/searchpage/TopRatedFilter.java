@@ -1,9 +1,9 @@
-package pages.quandoo;
+package pages.quandoo.searchpage;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SearchPage {
+public class TopRatedFilter {
 
     @FindBy(xpath = "//button[@data-qa='filter-button-top-rated']")
     private SelenideElement topRatedBtn;
@@ -13,6 +13,7 @@ public class SearchPage {
 
     @FindBy(xpath = "//span[contains(.,'Review score: 4-6')]")
     private SelenideElement topRatedFilter;
+
 
     public void clickTopRatedBtn() {
         topRatedBtn.click();
@@ -24,7 +25,6 @@ public class SearchPage {
 
     public void acceptCookies() {
         okBtn.click();
-
     }
 
     public SelenideElement topRatedFilter() {
