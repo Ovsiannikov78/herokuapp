@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="idealo" verbose="1">
+
+    <test name="IdealoEBaikes Test">
+
+        <packages>
+            <package name="idealo"/>
+        </packages>
+    </test>
+
+</suite>
